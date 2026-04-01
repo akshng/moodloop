@@ -28,10 +28,6 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
-  icons: {
-    icon: [{ url: '/icon-192.png?v=3', sizes: '192x192', type: 'image/png' }],
-    apple: [{ url: '/icon-192.png?v=3', sizes: '192x192', type: 'image/png' }],
-  },
   other: {
     'mobile-web-app-capable': 'yes',
     'msapplication-TileColor': '#6d5cbf',
@@ -45,6 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/icon-192.png?v=4" type="image/png" />
+      </head>
       <body className="font-sans antialiased">
         {children}
         <PwaRegister />
